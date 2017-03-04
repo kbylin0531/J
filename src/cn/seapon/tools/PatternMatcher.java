@@ -92,9 +92,6 @@ public class PatternMatcher extends JFrame implements ActionListener {
 		if (sourse.equals(openinput)) {
 			File file = getFile(1);
 			String absolutePath = file.getAbsolutePath();// 文件绝对路径
-			// String filename = file.getName();//文件名称
-			// System.out.println((file.isDirectory()?"Directory:":"File:" )+
-			// absolutePath);
 			if (!Files.exists(Paths.get(absolutePath))) {
 				showMessage("输入目录不存在");
 				return;
